@@ -1,6 +1,12 @@
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
+const path = require("path");
+
+app.get('/google12345abcde.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/google12345abcde.html'));
+});
+
 
 const express = require("express");
 const app = express();
