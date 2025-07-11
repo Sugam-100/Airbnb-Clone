@@ -1,16 +1,19 @@
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
-// Google verification route
-app.get('/google61b6c508805c02b3.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/google61b6c508805c02b3.html'));
-});
+
 
 
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const path = require("path");
+
+// 🔽 Add Google verification route AFTER app is defined
+app.get('/google61b6c508805c02b3.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'google61b6c508805c02b3.html'));
+});
+
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const ExpressError = require("./utils/ExpressError.js");
