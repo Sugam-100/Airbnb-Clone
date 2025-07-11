@@ -3,8 +3,8 @@ if (process.env.NODE_ENV !== "production") {
 }
 const path = require("path");
 
-app.get('/google12345abcde.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/google12345abcde.html'));
+app.get('/google61b6c508805c02b3.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/google61b6c508805c02b3.html'));
 });
 
 
